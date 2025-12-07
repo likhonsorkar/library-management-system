@@ -1,0 +1,723 @@
+[
+    {
+        "model": "books.author",
+        "pk": 1,
+        "fields": {
+            "name": "Rabindranath Tagore",
+            "bio": "A pioneer of Bengali literature, the Bard of Bengal."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 2,
+        "fields": {
+            "name": "Humayun Ahmed",
+            "bio": "Popular Bengali fiction writer, playwright, and filmmaker."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 3,
+        "fields": {
+            "name": "Agatha Christie",
+            "bio": "English writer known for her sixty-six detective novels."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 4,
+        "fields": {
+            "name": "J.K. Rowling",
+            "bio": "British author, creator of the Harry Potter fantasy series."
+        }
+    },
+    {
+        "model": "books.author",
+        "pk": 5,
+        "fields": {
+            "name": "Harper Lee",
+            "bio": "American novelist known for 'To Kill a Mockingbird'."
+        }
+    },
+
+    {
+        "model": "books.category",
+        "pk": 1,
+        "fields": {
+            "name": "Novel",
+            "description": "Long-form narrative prose fiction."
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 2,
+        "fields": {
+            "name": "Short Story",
+            "description": "A brief piece of narrative prose fiction."
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 3,
+        "fields": {
+            "name": "Science Fiction",
+            "description": "Fiction dealing with imaginative concepts such as futuristic science and technology."
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 4,
+        "fields": {
+            "name": "Thriller",
+            "description": "Suspense and exciting plots."
+        }
+    },
+    {
+        "model": "books.category",
+        "pk": 5,
+        "fields": {
+            "name": "Self-Help",
+            "description": "Books intended to instruct readers on solving personal problems."
+        }
+    },
+
+    {
+        "model": "books.book",
+        "pk": 101,
+        "fields": {
+            "title": "Shesher Kobita",
+            "author": 1, 
+            "ISBN": "978-984-33-8716-1",
+            "category": 1, 
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 102,
+        "fields": {
+            "title": "Himu Samagra (Collected Himu)",
+            "author": 2, 
+            "ISBN": "978-984-81-2244-5",
+            "category": 1, 
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 103,
+        "fields": {
+            "title": "Galpaguchchha (First Volume)",
+            "author": 1, 
+            "ISBN": "978-984-50-6123-4",
+            "category": 2, 
+            "stock": 1
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 104,
+        "fields": {
+            "title": "Alien Nishi",
+            "author": 2, 
+            "ISBN": "978-984-50-6555-5",
+            "category": 3, 
+            "stock": 0 
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 105,
+        "fields": {
+            "title": "Tin-ti Rohossho (Three Mysteries)",
+            "author": 2, 
+            "ISBN": "978-984-81-2244-6",
+            "category": 4, 
+            "stock": 4 
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 106,
+        "fields": {
+            "title": "Gora",
+            "author": 1, 
+            "ISBN": "978-984-33-8716-2",
+            "category": 1, 
+            "stock": 2 
+        }
+    },
+    
+    {
+        "model": "books.book",
+        "pk": 107,
+        "fields": {
+            "title": "Murder on the Orient Express",
+            "author": 3,
+            "ISBN": "978-0007119318",
+            "category": 4,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 108,
+        "fields": {
+            "title": "The ABC Murders",
+            "author": 3,
+            "ISBN": "978-0007119363",
+            "category": 4,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 109,
+        "fields": {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": 4,
+            "ISBN": "978-0590353427",
+            "category": 1,
+            "stock": 7
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 110,
+        "fields": {
+            "title": "Harry Potter and the Chamber of Secrets",
+            "author": 4,
+            "ISBN": "978-0439064866",
+            "category": 1,
+            "stock": 6
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 111,
+        "fields": {
+            "title": "To Kill a Mockingbird",
+            "author": 5,
+            "ISBN": "978-0061120084",
+            "category": 1,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 112,
+        "fields": {
+            "title": "The Secret Garden",
+            "author": 1,
+            "ISBN": "978-0147514128",
+            "category": 2,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 113,
+        "fields": {
+            "title": "And Then There Were None",
+            "author": 3,
+            "ISBN": "978-0062073488",
+            "category": 4,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 114,
+        "fields": {
+            "title": "The Cuckoo's Calling",
+            "author": 4,
+            "ISBN": "978-0316369013",
+            "category": 4,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 115,
+        "fields": {
+            "title": "The Alchemist",
+            "author": 2, 
+            "ISBN": "978-0062315007",
+            "category": 5,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 116,
+        "fields": {
+            "title": "Atomic Habits",
+            "author": 5, 
+            "ISBN": "978-0735211292",
+            "category": 5,
+            "stock": 6
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 117,
+        "fields": {
+            "title": "The Silent Patient",
+            "author": 3, 
+            "ISBN": "978-1509838703",
+            "category": 4,
+            "stock": 1
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 118,
+        "fields": {
+            "title": "Pride and Prejudice",
+            "author": 1, 
+            "ISBN": "978-0141439518",
+            "category": 1,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 119,
+        "fields": {
+            "title": "Jane Eyre",
+            "author": 5, 
+            "ISBN": "978-0141441146",
+            "category": 1,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 120,
+        "fields": {
+            "title": "Wuthering Heights",
+            "author": 5, 
+            "ISBN": "978-0141441672",
+            "category": 1,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 121,
+        "fields": {
+            "title": "1984",
+            "author": 2,
+            "ISBN": "978-0451524935",
+            "category": 3,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 122,
+        "fields": {
+            "title": "Brave New World",
+            "author": 1,
+            "ISBN": "978-0060850523",
+            "category": 3,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 123,
+        "fields": {
+            "title": "The Hobbit",
+            "author": 4,
+            "ISBN": "978-0618260300",
+            "category": 1,
+            "stock": 8
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 124,
+        "fields": {
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "author": 4,
+            "ISBN": "978-0618517657",
+            "category": 1,
+            "stock": 7
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 125,
+        "fields": {
+            "title": "The Da Vinci Code",
+            "author": 3,
+            "ISBN": "978-0385504201",
+            "category": 4,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 126,
+        "fields": {
+            "title": "Gone Girl",
+            "author": 3,
+            "ISBN": "978-0307588371",
+            "category": 4,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 127,
+        "fields": {
+            "title": "The Girl with the Dragon Tattoo",
+            "author": 4,
+            "ISBN": "978-0307470652",
+            "category": 4,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 128,
+        "fields": {
+            "title": "Becoming",
+            "author": 5,
+            "ISBN": "978-1524763138",
+            "category": 5,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 129,
+        "fields": {
+            "title": "Educated",
+            "author": 5,
+            "ISBN": "978-0399590504",
+            "category": 5,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 130,
+        "fields": {
+            "title": "The Great Gatsby",
+            "author": 1,
+            "ISBN": "978-0743273565",
+            "category": 1,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 131,
+        "fields": {
+            "title": "Moby Dick",
+            "author": 2,
+            "ISBN": "978-0142437247",
+            "category": 1,
+            "stock": 1
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 132,
+        "fields": {
+            "title": "Frankenstein",
+            "author": 1,
+            "ISBN": "978-0141439471",
+            "category": 3,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 133,
+        "fields": {
+            "title": "Dracula",
+            "author": 2,
+            "ISBN": "978-0141439846",
+            "category": 4,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 134,
+        "fields": {
+            "title": "The Hitchhiker's Guide to the Galaxy",
+            "author": 4,
+            "ISBN": "978-0345391803",
+            "category": 3,
+            "stock": 6
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 135,
+        "fields": {
+            "title": "Do Androids Dream of Electric Sheep?",
+            "author": 2,
+            "ISBN": "978-0345404473",
+            "category": 3,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 136,
+        "fields": {
+            "title": "The Girl on the Train",
+            "author": 3,
+            "ISBN": "978-1594634024",
+            "category": 4,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 137,
+        "fields": {
+            "title": "Where the Crawdads Sing",
+            "author": 5,
+            "ISBN": "978-0735219090",
+            "category": 1,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 138,
+        "fields": {
+            "title": "The Four Agreements",
+            "author": 5,
+            "ISBN": "978-1878424310",
+            "category": 5,
+            "stock": 7
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 139,
+        "fields": {
+            "title": "Dune",
+            "author": 2,
+            "ISBN": "978-0441172719",
+            "category": 3,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 140,
+        "fields": {
+            "title": "The Martian",
+            "author": 4,
+            "ISBN": "978-0553384971",
+            "category": 3,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 141,
+        "fields": {
+            "title": "Little Women",
+            "author": 1,
+            "ISBN": "978-0147514104",
+            "category": 1,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 142,
+        "fields": {
+            "title": "The Odyssey",
+            "author": 1,
+            "ISBN": "978-0140268867",
+            "category": 2,
+            "stock": 1
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 143,
+        "fields": {
+            "title": "Sapiens: A Brief History of Humankind",
+            "author": 5,
+            "ISBN": "978-0062316097",
+            "category": 5,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 144,
+        "fields": {
+            "title": "The Subtle Art of Not Giving a F*ck",
+            "author": 2,
+            "ISBN": "978-0062457714",
+            "category": 5,
+            "stock": 6
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 145,
+        "fields": {
+            "title": "Digital Fortress",
+            "author": 3,
+            "ISBN": "978-0312959882",
+            "category": 4,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 146,
+        "fields": {
+            "title": "Angels & Demons",
+            "author": 3,
+            "ISBN": "978-0743472021",
+            "category": 4,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 147,
+        "fields": {
+            "title": "The Maze Runner",
+            "author": 4,
+            "ISBN": "978-0385737951",
+            "category": 3,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 148,
+        "fields": {
+            "title": "Divergent",
+            "author": 4,
+            "ISBN": "978-0062024022",
+            "category": 3,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 149,
+        "fields": {
+            "title": "The Secret History",
+            "author": 5,
+            "ISBN": "978-0679738283",
+            "category": 1,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 150,
+        "fields": {
+            "title": "Neverwhere",
+            "author": 2,
+            "ISBN": "978-0380789013",
+            "category": 1,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 151,
+        "fields": {
+            "title": "The Bell Jar",
+            "author": 1,
+            "ISBN": "978-0061177699",
+            "category": 1,
+            "stock": 3
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 152,
+        "fields": {
+            "title": "Slaughterhouse-Five",
+            "author": 2,
+            "ISBN": "978-0385312089",
+            "category": 3,
+            "stock": 1
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 153,
+        "fields": {
+            "title": "The Road",
+            "author": 5,
+            "ISBN": "978-0307387899",
+            "category": 3,
+            "stock": 2
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 154,
+        "fields": {
+            "title": "Pillars of the Earth",
+            "author": 3,
+            "ISBN": "978-0451487377",
+            "category": 1,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 155,
+        "fields": {
+            "title": "The Name of the Wind",
+            "author": 4,
+            "ISBN": "978-0756404741",
+            "category": 1,
+            "stock": 5
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 156,
+        "fields": {
+            "title": "The Way of Kings",
+            "author": 4,
+            "ISBN": "978-0765326355",
+            "category": 1,
+            "stock": 6
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 157,
+        "fields": {
+            "title": "The Power of Now",
+            "author": 5,
+            "ISBN": "978-1577314806",
+            "category": 5,
+            "stock": 4
+        }
+    },
+    {
+        "model": "books.book",
+        "pk": 158,
+        "fields": {
+            "title": "Man's Search for Meaning",
+            "author": 1,
+            "ISBN": "978-0807014295",
+            "category": 5,
+            "stock": 3
+        }
+    }
+]
