@@ -6,7 +6,6 @@ class MemberSerializers(serializers.ModelSerializer):
         model = Member
         fields = ('id', 'first_name', 'last_name', 'email', 'address', 'phone')
 class MemberCreateSerializers(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
     class Meta:
         model = Member
         fields = ('id', 'first_name', 'last_name', 'email', 'address', 'phone', 'password')
