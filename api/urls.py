@@ -8,7 +8,7 @@ router = routers.DefaultRouter()
 router.register('books', BookViewSet, basename="books")
 router.register('categories', CategoryViewSet, basename="categories")
 router.register('authors', AuthorViewSet, basename="authors")
-router.register('members', MemberViewSet, basename='members')
+# router.register('members', MemberViewSet, basename='members')
 router.register('borrow-records', BorrowRecordViewSet, basename='borrow-records')
 urlpatterns = [
     path('', include(router.urls))
