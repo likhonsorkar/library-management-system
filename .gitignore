@@ -1,2 +1,11 @@
 .venv
 /__pycache__/
+<<<<<<< HEAD
+token.json
+*/__pycache__/*
+__pycache__/*
+__pycache__
+.env
+=======
+__pycache__/
+>>>>>>> 537a04d819baeed57e9d7b9c51c55f4ffc53417b
