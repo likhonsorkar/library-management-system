@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.mixins import CreateModelMixin,RetrieveModelMixin, ListModelMixin
 from members.models import Member
@@ -16,5 +17,4 @@ class MemberViewSet(GenericViewSet, CreateModelMixin, RetrieveModelMixin, ListMo
 
 class MyView(View):
     def get(self, request, *args, **kwargs):
-        # Get the URL for a specific view name
-        return HttpResponse(f'Api -> <a href="/api">Click here to go to the api page</a><br> Api -> <a href="/swagger">Click here to go to the api Documentation page</a><br>')
+        return render(request, 'index.html')
